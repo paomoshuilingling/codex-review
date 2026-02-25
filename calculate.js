@@ -4,6 +4,8 @@ function calculate(a, b, operator) {
             return a + b;
         case 'subtract':
             return a - b;
+        default:
+            throw new Error(`Unsupported operator: ${operator}`);
     }
 }
 
